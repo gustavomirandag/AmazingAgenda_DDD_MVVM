@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AmazingAgendaApp.Views.UpdateContactPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="UWP" Value="40,200,40,40"/>
+            <On Platform="Android" Value="20,20,20,20"/>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="EntryName" Text="" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="EntryPhone" Text="" HorizontalOptions="FillAndExpand"/>
+            <StackLayout Orientation="Horizontal" Spacing="30">
+                <Button x:Name="ButtonSave" Text="Save" Clicked="ButtonSave_Clicked" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="ButtonCancel" Text="Cancel" Clicked="ButtonCancel_Clicked" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
