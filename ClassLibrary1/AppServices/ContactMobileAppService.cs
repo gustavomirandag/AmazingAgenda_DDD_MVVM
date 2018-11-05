@@ -8,23 +8,20 @@ using AmazingAgenda.Domain.Model.Entities;
 using AmazingAgenda.Domain.Model.Interfaces.Services;
 using AutoMapper;
 using System.Linq;
-using AmazingAgenda.Application.Commands.ContactCommands;
-using AmazingAgenda.Application.CommandHandlers;
 
 namespace AmazingAgenda.Application.AppServices
 {
     public class ContactMobileAppService : IContactAppService<ContactMobileViewModel>
     {
         private IContactService _contactService;
-        private ContactCommandHandler _contactCommandHandler;
+
         public ObservableCollection<ContactMobileViewModel> ObservableContacts { get; }
 
         public ContactMobileAppService(IContactService contactService)
         {
             AutoMapper.AutoMapperConfig.RegisterMappings();
-            ObservableContacts = new ObservableCollection<ContactMobileViewModel>();
             _contactService = contactService;
-            _contactCommandHandler = new ContactCommandHandler(contactService, this);
+            ObservableContacts = new ObservableCollection<ContactMobileViewModel>();
             var contacts = _contactService.GetAll();
             foreach(var contact in contacts)
             {
@@ -32,9 +29,12 @@ namespace AmazingAgenda.Application.AppServices
             }
         }
 
-        public void Add(ContactMobileViewModel contact)
+        public ContactMobileViewModel Add(ContactMobileViewModel contact)
         {
-            _contactCommandHandler.ProcessQueue(new AddContactCommand(Mapper.Map<Contact>(contact)));
+            Contact contactWithId = _contactService.Add(Mapper.Map<Contact>(contact));
+            ContactMobileViewModel contactViewModel = Mapper.Map<ContactMobileViewModel>(contactWithId);
+            ObservableContacts.Add(contactViewModel);
+            return contactViewModel;
         }
 
         public IEnumerable<ContactMobileViewModel> GetAll()

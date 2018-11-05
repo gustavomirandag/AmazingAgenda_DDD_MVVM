@@ -20,7 +20,11 @@ namespace AmazingAgendaApp.Views
 
         private void ButtonAdd_Clicked(object sender, EventArgs e)
         {
-            App.ContactAppService.Add(new ContactMobileViewModel() { Name = EntryName.Text, Phone = EntryPhone.Text });
+            App.ContactAppService.Add(new ContactMobileViewModel()
+            {
+                Name = EntryName.Text,
+                Phone = EntryPhone.Text
+            });
             Navigation.PopModalAsync(true);
         }
         private void ButtonCancel_Clicked(object sender, EventArgs e)

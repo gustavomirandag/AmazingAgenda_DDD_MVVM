@@ -7,7 +7,7 @@ namespace AmazingAgenda.Application.AppServices
 {
     public interface IContactAppService<TContactViewModel>
     {
-        void Add(TContactViewModel contact);
+        TContactViewModel Add(TContactViewModel contact);
         TContactViewModel GetById(Guid id);
         IEnumerable<TContactViewModel> GetAll();
         void Remove(Guid id);

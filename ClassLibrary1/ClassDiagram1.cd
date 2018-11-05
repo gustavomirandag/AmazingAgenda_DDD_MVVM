@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AmazingAgenda.Application.AppServices.ContactMobileAppService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYEAAAAAAAAAAAAAAAABAAAAAAABAAAAgAAAAAAAIA=</HashCode>
+      <FileName>AppServices\ContactMobileAppService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AmazingAgenda.Application.AutoMapper.AutoMapperConfig" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AutoMapper\AutoMapperConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AmazingAgenda.Application.AutoMapper.DomainToViewModelMappingContactMobile" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AutoMapper\DomainToViewModelMappingContactMobile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AmazingAgenda.Application.AutoMapper.ViewModelToDomainMappingContactMobile" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AutoMapper\ViewModelToDomainMappingContactMobile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary1.Class1" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AmazingAgenda.Application.ViewModels.ContactViewModel">
+    <Position X="1.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ViewModels\ContactViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AmazingAgenda.Application.ViewModels.EntityBaseViewModel&lt;TId&gt;">
+    <Position X="1.5" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\EntityBaseViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AmazingAgenda.Application.ViewModels.Mobile.ContactMobileViewModel">
+    <Position X="0.5" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIgAAACAAAAAAIAAAAIQAgAAAAAAAAAEAIAAAABE=</HashCode>
+      <FileName>ViewModels\Mobile\ContactMobileViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AmazingAgenda.Application.ViewModels.Web.ContactWebViewModel">
+    <Position X="3" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Web\ContactWebViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="AmazingAgenda.Application.AppServices.IContactAppService&lt;TContactViewModel&gt;" Collapsed="true">
+    <Position X="11.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAABAAAAAAAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>AppServices\IContactAppService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
