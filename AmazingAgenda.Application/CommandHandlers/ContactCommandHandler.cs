@@ -37,6 +37,7 @@ namespace AmazingAgenda.Application.CommandHandlers
 
         private void AddContact(ContactCommand contactCommand)
         {
+            
             Contact contactWithId = _contactService.Add(Mapper.Map<Contact>(contactCommand.Contact));
             ContactMobileViewModel contactViewModel = Mapper.Map<ContactMobileViewModel>(contactWithId);
             _contactMobileAppService.ObservableContacts.Add(contactViewModel);
